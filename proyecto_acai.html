@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación del Proyecto: Açaí Lugo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Gris claro de fondo */
+        }
+        .slide {
+            display: none; /* Ocultar todas las diapositivas por defecto */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            min-height: 500px;
+        }
+        .slide.active {
+            display: flex; /* Mostrar diapositiva activa */
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(135deg, #8E2DE2, #4A00E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 md:p-8">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <!-- Contenedor de Diapositivas -->
+        <div id="slides-container" class="relative w-full aspect-[16/9] bg-white rounded-2xl overflow-hidden">
+            
+            <!-- Diapositiva 1: El Concepto -->
+            <div class="slide active flex-col justify-center items-center text-center p-8 md:p-16 gradient-bg text-white" data-slide="1">
+                <h3 class="text-2xl md:text-3xl font-bold mb-2 opacity-80">Açaí Lugo</h3>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">La primera tienda de açaí bowls de alta calidad en el corazón de Lugo.</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">Un espacio moderno con la "vibra" de Brasil, enfocado en ofrecer una experiencia saludable, rápida y deliciosa.</p>
+            </div>
+
+            <!-- Diapositiva 2: La Oportunidad -->
+            <div class="slide flex-col justify-start items-start text-left p-8 md:p-16" data-slide="2">
+                <h2 class="text-4xl md:text-5xl font-black mb-6"><span class="gradient-text">¿Qué hemos detectado?</span></h2>
+                <div class="space-y-5 w-full text-gray-700">
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800">📍 EL HUECO DE UBICACIÓN</h3>
+                        <p class="md:text-lg">No existe una oferta de açaí en la zona de mayor tráfico. La competencia directa está lejos.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800">🏃‍♂️ EL HUECO DE VELOCIDAD</h3>
+                        <p class="md:text-lg">Los locales de moda (brunch) están saturados y son lentos.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800">🥗 LA NECESIDAD SALUDABLE</h3>
+                        <p class="md:text-lg">El público joven demanda activamente opciones de comida rápida y trending.</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-xl font-bold text-center w-full gradient-text">Hay una demanda insatisfecha esperando una solución.</p>
+            </div>
+
+            <!-- Diapositiva 3: Nuestra Solución -->
+            <div class="slide flex-col justify-center items-center text-center p-8 md:p-16" data-slide="3">
+                 <h2 class="text-4xl md:text-5xl font-black mb-10"><span class="gradient-text">El capricho que Lugo necesita.</span></h2>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl">
+                     <div class="bg-purple-50 p-6 rounded-xl text-left">
+                         <p class="text-4xl mb-2">🍓</p>
+                         <h3 class="text-xl font-bold text-purple-800">Producto Superior</h3>
+                         <p class="text-purple-700">Açaí puro, sin azúcares, con toppings frescos y locales.</p>
+                     </div>
+                     <div class="bg-purple-50 p-6 rounded-xl text-left">
+                         <p class="text-4xl mb-2">📸</p>
+                         <h3 class="text-xl font-bold text-purple-800">Estética "Instagrameable"</h3>
+                         <p class="text-purple-700">Un producto y un local diseñados para ser compartidos.</p>
+                     </div>
+                     <div class="bg-purple-50 p-6 rounded-xl text-left">
+                         <p class="text-4xl mb-2">🏃‍♂️</p>
+                         <h3 class="text-xl font-bold text-purple-800">Servicio Rápido</h3>
+                         <p class="text-purple-700">El formato "Take Away" perfecto para el ritmo del centro.</p>
+                     </div>
+                     <div class="bg-purple-50 p-6 rounded-xl text-left">
+                         <p class="text-4xl mb-2">📍</p>
+                         <h3 class="text-xl font-bold text-purple-800">Ubicación Estratégica</h3>
+                         <p class="text-purple-700">Justo donde está nuestro público objetivo.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <!-- Diapositiva 4: Nuestro Cliente Ideal -->
+            <div class="slide flex-col justify-center items-start text-left p-8 md:p-16" data-slide="4">
+                <h2 class="text-4xl md:text-5xl font-black mb-8"><span class="gradient-text">Nuestro Cliente Ideal</span></h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">El Público Joven de Lugo</h3>
+                <ul class="space-y-4 text-lg text-gray-700 list-disc list-inside">
+                    <li><span class="font-bold">Edad:</span> 16-35 años.</li>
+                    <li><span class="font-bold">Estilo de vida:</span> Activos, preocupados por su bienestar, siguen tendencias.</li>
+                    <li><span class="font-bold">Comportamiento digital:</span> Usuarios intensivos de Instagram. Valoran la estética y las recomendaciones online.</li>
+                    <li><span class="font-bold">Necesidad:</span> Buscan una alternativa saludable y "cool" a las opciones de siempre.</li>
+                </ul>
+            </div>
+
+            <!-- Diapositiva 5: Modelo de Negocio -->
+            <div class="slide flex-col justify-center items-start p-8 md:p-16" data-slide="5">
+                <h2 class="text-4xl md:text-5xl font-black mb-8"><span class="gradient-text">¿Cómo generamos ingresos?</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">1. Menú Híbrido Inteligente</h3>
+                        <p class="mb-2"><span class="font-bold">"Crea tu Bowl":</span> Para el cliente creativo y personalizador.</p>
+                        <p><span class="font-bold">"Recetas Recomendadas":</span> Para el cliente indeciso o con prisa.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">2. Estrategia de Precio de Valor</h3>
+                        <p class="mb-2">✓ No somos "baratos", porque nuestro producto es de alta calidad.</p>
+                        <p>✓ No somos "de lujo", para ser un capricho accesible y recurrente.</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-xl font-bold text-center w-full gradient-text">Un modelo flexible que se adapta a cada cliente.</p>
+            </div>
+
+            <!-- Diapositiva 6: El Equipo y la Operativa -->
+            <div class="slide flex-col justify-center items-start p-8 md:p-16" data-slide="6">
+                <h2 class="text-4xl md:text-5xl font-black mb-8"><span class="gradient-text">Una estructura sólida para el éxito.</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Los Socios</h3>
+                        <p class="mb-2"><span class="font-bold">Socio 1 (Remoto):</span> Gestión administrativa, marketing y proveedores.</p>
+                        <p><span class="font-bold">Socio 2 (Presencial):</span> Supervisión del local, calidad y gestión de personal.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">El Personal</h3>
+                        <p class="mb-2">✓ 2 empleados contratados.</p>
+                        <p>✓ <span class="font-bold">Perfil:</span> Priorizamos la **actitud y amabilidad** para crear una experiencia de cliente inolvidable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diapositiva 7: Próximos Pasos -->
+            <div class="slide flex-col justify-center items-center text-center p-8 md:p-16" data-slide="7">
+                <h2 class="text-4xl md:text-5xl font-black mb-8"><span class="gradient-text">Próximos Pasos</span></h2>
+                <ol class="text-lg md:text-xl text-gray-700 space-y-4 max-w-2xl mx-auto text-left">
+                    <li class="p-4 bg-gray-50 rounded-lg"><b>1. Búsqueda y Selección del Local:</b> Encontrar el espacio perfecto en el centro que requiera una reforma mínima.</li>
+                    <li class="p-4 bg-gray-50 rounded-lg"><b>2. Contacto con Proveedores:</b> Asegurar un suministro constante de açaí de alta calidad y toppings frescos.</li>
+                    <li class="p-4 bg-gray-50 rounded-lg"><b>3. Plan Financiero Detallado:</b> Desglosar la inversión inicial (CAPEX) y los costes operativos.</li>
+                    <li class="p-4 bg-gray-50 rounded-lg"><b>4. Estrategia de Lanzamiento:</b> Marketing con redes sociales</li>
+                </ol>
+                 <p class="mt-12 text-4xl font-black gradient-text">¡Gracias!</p>
+            </div>
+
+        </div>
+
+        <!-- Navegación y Contador -->
+        <div class="flex items-center justify-between mt-6">
+            <button id="prevBtn" class="px-6 py-3 rounded-lg text-white font-bold gradient-bg disabled:opacity-50 disabled:cursor-not-allowed transition-opacity">
+                Anterior
+            </button>
+            <div id="slide-counter" class="text-center font-semibold text-gray-600">
+                1 / 7
+            </div>
+            <button id="nextBtn" class="px-6 py-3 rounded-lg text-white font-bold gradient-bg disabled:opacity-50 disabled:cursor-not-allowed transition-opacity">
+                Siguiente
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                
+                // Actualizar contador
+                slideCounter.textContent = `${index + 1} / ${totalSlides}`;
+
+                // Habilitar/deshabilitar botones
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === totalSlides - 1;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Inicializar
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
+
